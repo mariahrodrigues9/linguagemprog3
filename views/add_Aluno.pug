@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 #{title}
+  form(method='POST', action='/Aluno/add')
+    .form-group
+      label School
+      input.form-control(name='School', type='text')
+    .form-group
+      label Sex
+      input.form-control(name='Sex', type='text')
+    .form-group
+      label Age
+      input.form-control(name='Age', type='text')
+    .form-group
+      label Traveltime
+      input.form-control(name='Traveltime', type='text')
+    .form-group
+      label Studytime
+      input.form-control(name='Studytime', type='text')
+    .form-group
+      label Failures
+      input.form-control(name='Failures', type='text')
+    br
+    input.btn.btn-primary(type='submit', value='Submit')
